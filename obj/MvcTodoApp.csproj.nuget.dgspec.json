@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Nawzat\\Desktop\\SE2-MVC&N-tier\\MvcTodoApp_SV\\MvcTodoApp.csproj": {}
+    "D:\\IT\\EN\\MvcTodoApp_SV\\MVCTODOAPP_SV\\MvcTodoApp.csproj": {}
   },
   "projects": {
-    "D:\\Nawzat\\Desktop\\SE2-MVC&N-tier\\MvcTodoApp_SV\\MvcTodoApp.csproj": {
+    "D:\\IT\\EN\\MvcTodoApp_SV\\MVCTODOAPP_SV\\MvcTodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nawzat\\Desktop\\SE2-MVC&N-tier\\MvcTodoApp_SV\\MvcTodoApp.csproj",
+        "projectUniqueName": "D:\\IT\\EN\\MvcTodoApp_SV\\MVCTODOAPP_SV\\MvcTodoApp.csproj",
         "projectName": "MvcTodoApp",
-        "projectPath": "D:\\Nawzat\\Desktop\\SE2-MVC&N-tier\\MvcTodoApp_SV\\MvcTodoApp.csproj",
-        "packagesPath": "C:\\Users\\Nawzat\\.nuget\\packages\\",
-        "outputPath": "D:\\Nawzat\\Desktop\\SE2-MVC&N-tier\\MvcTodoApp_SV\\obj\\",
+        "projectPath": "D:\\IT\\EN\\MvcTodoApp_SV\\MVCTODOAPP_SV\\MvcTodoApp.csproj",
+        "packagesPath": "C:\\Users\\E-store\\.nuget\\packages\\",
+        "outputPath": "D:\\IT\\EN\\MvcTodoApp_SV\\MVCTODOAPP_SV\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nawzat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\E-store\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

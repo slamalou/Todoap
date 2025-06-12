@@ -12,23 +12,34 @@
         @foreach (var task in Model)
         {
             <li>
-                @if(task.IsComplete)
+                @if (task.IsComplete)
                 {
                     <s>@task.Title</s>
                 }
                 else
                 {
                     @task.Title
+
+                    <!-- نموذج إكمال المهمة -->
                     <form method="post" asp-action="CompleteTask" style="display:inline;">
                         <input type="hidden" name="id" value="@task.Id" />
                         <button type="submit">اكتملت</button>
                     </form>
 
+                    <!-- ✅ نموذج تعديل المهمة -->
+                    <form method="post" asp-action="EditTask" style="display:inline; margin-right: 10px;">
+                        <input type="hidden" name="id" value="@task.Id" />
+                        <input type="text" name="newTitle" placeholder="عنوان جديد" />
+                        <button type="submit">تعديل</button>
+                    </form>
                 }
             </li>
         }
     </ul>
 
+    <hr />
+
+    <!-- نموذج إضافة مهمة جديدة -->
     <form method="post" asp-action="AddTask">
         <input type="text" name="title" placeholder="أضف مهمة جديدة" />
         <button type="submit">إضافة</button>

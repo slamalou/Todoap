@@ -38,9 +38,9 @@ namespace MvcTodoApp.Controllers
             return RedirectToAction("Index");
         }
 
-        /// <summary>
+        ///<summary>
         /// تعيين مهمة كمكتملة.
-        /// </summary>
+        ///</summary>
         [HttpPost]
         public IActionResult CompleteTask(int id)
         {
@@ -49,5 +49,30 @@ namespace MvcTodoApp.Controllers
                 task.IsComplete = true;
             return RedirectToAction("Index");
         }
+        ///<summary>
+        /// تعديل عنوان المهمة
+        ///</summary>
+        /// <summary>
+        /// تعديل عنوان المهمة.
+        /// </summary>
+        /// <param name="id">معرف المهمة</param>
+        /// <param name="newTitle">العنوان الجديد</param>
+        [HttpPost]
+        public IActionResult EditTask(int id, string newTitle)
+        {   
+            // منبحث عن المهمة عن طريق الايدي
+            var task = tasks.FirstOrDefault(t => t.Id == id);
+
+            // منتاكد من انو المهمة موجودة والعنوان الجديد مش فارغ 
+            if (task != null && !string.IsNullOrEmpty(newTitle))
+            {
+                // التعديل
+                task.Title = newTitle;
+            }
+
+            return RedirectToAction("Index");
+        }
+
+
     }
 }
